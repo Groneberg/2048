@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Site CSS */
+
+body {
+
+}
+
+header {
+    height: 10vh;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    
+    text-shadow: 
+        1px 2px 2px silver, 4px 2px 4px gold;
+}
+
+main {
+    background-color: #ededed;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='84' viewBox='0 0 126 84'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23918c99' fill-opacity='0.4'%3E%3Cpath d='M126 83v1H0v-2h40V42H0v-2h40V0h2v40h40V0h2v40h40V0h2v83zm-2-1V42H84v40h40zM82 42H42v40h40V42zm-50-6a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm96 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-42 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm30-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM20 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 24a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24-42a4 4 0 1 1 0-8 4 4 0 0 1 0 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainWrapper {
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    
+}
+.spielFeld {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #cccccc;
+}
+
+.labelWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    height: 98px;
+    width: 98px;
+    
+}
+
+label[class^=label] {
+    font-size: 28px;
+    width: 68px;
+    height: 28px;
+    padding: 30px 10px;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 5px
+}
+
+.leerLabel {
+    width: 68px;
+    height: 28px;
+    padding: 30px 10px;
+    border: 1px solid #ffffff;
+    color: #cccccc;
+}
+
+.label2 {background-color: #fff;}
+
+.label4 {background-color: #eaeaea;}
+
+.label8 {background-color: coral;}
+
+.label16 {background-color: orange;}
+
+.label32 {background-color: orangered;}
+
+.label64 {background-color: firebrick;}
+
+.label128 {background-color: #ffc;}
+
+.label256 {background-color: #ff9;}
+
+.label512 {background-color: #ff6;}
+
+.label1024 {background-color: #ff3;}
+
+.label2048 {background-color: gold;}
+
+.label4096 {
+    background-color: black;
+    color: white;
+}
+
+.loginLabel {
+}
+
+#highscoreLabel, #highscore {
+    height 1rem;
+    height: 2rem;
+    width: 100px;
+    padding: 2px 6px;
+    margin: 0 1px;
+    position: relative;
+    top: 3px;
+    background-color: #fff;
+}
+
+.actionButton {
+    width: 100px;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 14px;
+    border: 1px double black;
+    margin: 10px;
+}
+
+footer {
+    height: 10vh;
+    background-color: #000000;
+}
+
+#idDatumsAusgabe, #idZeit {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+}
+
+.loginBereich {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	margin: 10% auto;
+}
+
+/*google sing-in Button*/
+#customBtn {
+	background: white;
+	color: #444;
+	width: 150px;
+	border-radius: 5px;
+	border: thin solid #888;
+	box-shadow: 1px 1px 1px grey;
+	white-space: nowrap;
+	margin-top: 5px;
+}
+#customBtn:hover {
+	cursor: pointer;
+}
+span.label {
+	font-family: serif;
+	font-weight: normal;
+}
+span.icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 42px;
+}
+span.buttonText {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.abcRioButtonSvg {
+	margin: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+    
+    header {
+        
+    }
+    
+    h1 {
+        font-size: 2rem;
+
+    }
+    
+    main {
+        width: 90vw;
+        height: 80vh;
+    }
+    
+    .mainWrapper {
+    width: 200px;
+    height: 200px;
+    
+    }
+    .spielfeld {
+    }
+
+    .labelWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;
+        height: 48px;
+        width: 48px;
+
+    }
+
+    label:not(.labelLeer) {
+        font-size: 18px;
+        width: 42px;
+        height: 20px;
+        padding: 10px 0px;
+    }
+
+    .labelLeer {
+        width: 45px;
+        height: 28px;
+        padding: 8px 8px;
+        border: 1px solid #ffffff;
+        color: #cccccc;
+    }
+
+    #highscoreLabel, #highscore {
+        height 1rem;
+        height: 2rem;
+        font-size: 1rem;
+        padding: 2px;
+        margin: 0;
+        position: relative;
+        top: 0px;
+    }
+
+    .actionButton {
+        width: 50px;
+        height: 1.5rem;
+        font-size: 0.7rem;
+        margin: 5px;
+    }
+
+    #idDatumsAusgabe, #idZeit {
+        font-size: 1rem;
+        padding: 5px 0 0 0;
+        margin: 0;
+    }
+
+}
+

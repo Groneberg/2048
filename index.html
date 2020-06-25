@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2048</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen">
+        <script src="js/function.js"></script>
+        <script src="js/time.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="h1ID">2048</h1>
+        </header>
+        <main>
+            <div class="mainWrapper">
+                <div class="spielFeld">
+                    <div class="labelWrapper">
+                        <label id="label0" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label1" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label2" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label3" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label4" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label5" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label6" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label7" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label8" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label9" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label10" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label11" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label12" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label13" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label14" class="leerLabel">0</label>
+                    </div>
+                    <div class="labelWrapper">
+                        <label id="label15" class="leerLabel">0</label>
+                    </div>
+                </div>
+                <button id="buttonReset" class="actionButton" onclick="reset()" >Reset</button>
+                <label id="highscoreLabel">Highscore</label>
+                <label id="highscore">0</label>
+            </div>
+        </main>
+        <footer>
+            <p id="idDatumsAusgabe"></p>
+            <p id="idZeit"><p>
+        </footer>
+    <script>
+        start();  
+        datum();
+        window.setInterval(uhrzeit, 100);
+    </script>
+    </body>
+</html>
